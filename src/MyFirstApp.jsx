@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-const MyfirstApp = () => {
-  const defaultValue = 0;
-  const [counter, setCounter] = useState(defaultValue); 
+const MyfirstApp = ({ value }) => {
+  const [counter, setCounter] = useState(value); 
   
   const handleSubtract = () => {
     setCounter(counter - 1);
